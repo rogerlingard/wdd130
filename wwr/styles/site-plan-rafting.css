@@ -9,7 +9,7 @@ Fonts are separated by a & */
   --primary-color: #8ECAE6   ;
   --secondary-color: #d6ffdd ;
   --accent1-color: #219EBC;
-  --accent2-color: #fb8500;
+  --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
   --heading-font: 'Pangolin', cursive;
