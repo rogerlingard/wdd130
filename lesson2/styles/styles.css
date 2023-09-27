@@ -1,7 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
 
-
+.main-para {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+#active {
+  background-color: white;
+  color: steelblue;
+}
 body {
     text-align: center;
     font-family: 'Mooli', sans-serif;
