@@ -1,0 +1,28 @@
+* {
+    text-align: center;
+    border: 2px solid blue;
+}
+:root {
+    background-color: pink;
+}
+h1 
+{
+    color: white;
+}
+p {
+    color: white;
+    padding: 5px;
+    width: 30%;
+    margin: 10px auto;
+    text-align: center;
+}
+#bold {
+    font-weight: bold;
+    font-size: 20px;
+}
+#list {
+    color: black;
+    text-align: left;
+    padding: 0%;
+    
+}

@@ -10,22 +10,24 @@
   color: steelblue;
 }
 body {
-    text-align: center;
+
     font-family: 'Mooli', sans-serif;
   }
 
 /* This is for the nav */
-
-  nav {
-    background-color: steelblue;
-    padding: 10px;
-  }
+nav, footer {
+  background-color: steelblue;
+  color: white;
+  padding: 10px;
+}
   /* This is for the ancor color */
   a {
     color: white;
     margin: 40px;
+    font-size: 1.5em;
   }
   h1 {
+    text-align: center;
     color: steelblue;
   }
   img {
@@ -34,8 +36,27 @@ body {
   }
   p {
     padding: 10px;
+    width: 100%;
   }
-  footer {
-    background-color: steelblue;
-    color: white;
-  }
+img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+} 
+* {
+  border: 2px solid blue;
+}
+
+main p {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+footer p {
+  font-size: 20px;
+  margin: 20px auto;
+}
+a:hover {
+  background-color: white;
+  color: steelblue;
+}
