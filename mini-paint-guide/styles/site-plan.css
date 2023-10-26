@@ -3,11 +3,11 @@ Any spaces in your font name should be replaced with a +.
 Fonts are separated by a | */
 @font-face {
   font-family: Intro-Rust-G-Base-2-Line;
-  src: url('fonts/introrustg-base2line.otf');
+  src: url(/mini-paint-guide/fonts/introrustg-base2line.otf);
 }
 @font-face {
   font-family: Andada-Regular;
-  src: url('fonts/Andada-Regular.otf');
+  src: url(/mini-paint-guide/fonts/Andada-Regular.otf);
 }
 
 
