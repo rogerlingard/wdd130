@@ -1,14 +1,13 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 @font-face {
   font-family: Intro-Rust-G-Base-2-Line;
-  src: url(/mini-paint-guide/fonts/introrustg-base2line.otf);
+  src: url('fonts/introrustg-base2line.otf');
 }
 @font-face {
   font-family: Andada-Regular;
-  src: url(/mini-paint-guide/fonts/Andada-Regular.otf);
+  src: url('fonts/Andada-Regular.otf');
 }
 
 
@@ -20,7 +19,7 @@ Fonts are separated by a | */
   --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: Intro-Rust-G-Base-2-Line, 'georgia';
+  --heading-font: Intro-Rust-G-Base-2-Line, Georgia;
   --paragraph-font: Andada-Regular, 'cursive';
 
   /* these colors below should be chosen from among your palette colors above */
