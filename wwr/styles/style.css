@@ -207,14 +207,14 @@ main section img {
 .box{
     grid-column: 1/4;   
     grid-row: 1/2;
-    background-color: #406a47;
+    background-color: #19381f;
     width: 100%;
 
 }
 .box2{
     grid-column: 1/4;
     grid-row: 3/4;
-    background-color: #406a47;
+    background-color:  #19381f;
     width: 100%;
 }
 .river-post {
