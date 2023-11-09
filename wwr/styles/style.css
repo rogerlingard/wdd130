@@ -213,8 +213,8 @@ main section img {
     color: rgb(212, 255, 255);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-self: center;
-    justify-self: center;
+    align-items: center;
+    justify-items: center;
     background-color: #2b412f;
 }
 .river-text2{
@@ -224,8 +224,8 @@ main section img {
     color: rgb(212, 255, 255);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-self: center;
-    justify-self: center;
+    align-items: center;
+    justify-items: center;
 }
 .river-post2{
     padding: 1rem;
@@ -245,8 +245,8 @@ main section img {
     color: rgb(212, 255, 255);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-self: center;
-    justify-self: center;
+    align-items: center;
+    justify-items: center;
     background-color: #2b412f;
 }
 .text{
