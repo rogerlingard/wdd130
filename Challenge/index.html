@@ -3,70 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 9 challenge</title>
-    <style>
-        body{
-            background-color: black;
-        }
-        .card{
-            max-width: 400px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .card img{
-            width: 100%
+    <title>Cascading Dropdown</title>
+    <script>
+        var subjectObject = {
+  "Hobbies": {
+    "Painting": ["canvas", "water", "acrylic", "oil"],
+    "Games": ["FPS", "Adventure", "RTS", "Text based"],
+    "Work Out": ["Legs", "Lifting", "Cardio", "Body builder"]
+  },
+  "Work": {
+    "Paid": ["Remote", "Physical", "Hybrid"],
+    "Unpaid": ["Parenting", "Service", "Internship"]
+  }
+}
+window.onload = function() {
+  var subjectSel = document.getElementById("subject");
+  var topicSel = document.getElementById("topic");
+  var chapterSel = document.getElementById("chapter");
+  for (var x in subjectObject) {
+    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  }
+  subjectSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    chapterSel.length = 1;
+    topicSel.length = 1;
+    //display correct values
+    for (var y in subjectObject[this.value]) {
+      topicSel.options[topicSel.options.length] = new Option(y, y);
+    }
+  }
+  topicSel.onchange = function() {
+    //empty Chapters dropdown
+    chapterSel.length = 1;
+    //display correct values
+    var z = subjectObject[subjectSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}
 
-        }
-        .stats{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            background-color: navy;
-            height: 100px;
-            align-content: center;
-        }
-        .stats div:nth-child(3){
-            border: none;
-        }
-        .stat{
-            color: white;
-            text-align: center;
-            border-right: 1px grey solid;
-        }
-        .stat p{
-            margin-block-start: 0rem;
-            margin-block-end: 0rem;
-        }
-        .stat1{
-            font-size: 1.5rem;
-        }
-        .stat2{
-            font-size: 0.8rem;
-        }
-
-    </style>
+    </script>
 </head>
 <body>
-    <section class="card">
-        <img src="./images/w09_ice_img.jpg" alt="city scape">
-        <p class="timing">3 weeks ago</p>
-        <p class="heading">Post 3</p>
-        <p class="content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate saepe nisi nesciunt vero aliquam quas. Laborum eos minima eum deleniti similique quaerat, cumque, harum, dicta quibusdam dolorem quis dolores tenetur neque ducimus rem? Delectus adipisci in officiis non sequi, quaerat mollitia. Omnis expedita incidunt quia ex obcaecati eum? Nam tempora necessitatibus voluptatum esse libero magnam, doloremque nulla nihil maiores pariatur magni hic quae ad fugiat doloribus alias suscipit sequi natus molestias voluptate et voluptatem velit. Nihil excepturi ipsa consectetur ullam amet sequi eveniet totam culpa unde expedita. Sapiente officia, ex laboriosam distinctio, sunt perferendis qui a ut unde iure deleniti!</p>
-        <div class="stats">
-            <div class="stat">
-                <p class="stat1">5<sup>m</sup></p>
-                <p class="stat2">READ</p>
-            </div>
-            <div class="stat">
-                <p class="stat1">2031</p>
-                <p class="stat2">VIEWS</p>
-            </div>
-            <div class="stat">
-                <p class="stat1">15</p>
-                <p class="stat2">COMMENTS</p>
-            </div>
-        </div>
-    </section>
+    <form name="form1" id="form1" action="/action_page.php">
+        Subjects: <select name="subject" id="subject">
+          <option value="" selected="selected">Select subject</option>
+        </select>
+        <br><br>
+        Topics: <select name="topic" id="topic">
+          <option value="" selected="selected">Please select subject first</option>
+        </select>
+        <br><br>
+        Chapters: <select name="chapter" id="chapter">
+          <option value="" selected="selected">Please select topic first</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+      
 </body>
 </html>
