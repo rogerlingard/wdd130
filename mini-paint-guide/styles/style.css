@@ -132,8 +132,11 @@ footer .social img {
 }
 .title-text {
     text-align: center;
+    font-family:'Agbalumo', 'cursive';
 }
-
+.sub-title-text{
+    text-align: center;
+}
 
 .tools-grid{
     display: grid;
@@ -144,6 +147,7 @@ footer .social img {
     align-content: center;
     align-items: center;
     margin: 50px;
+
 }
  .mini-img{
     display: block;
