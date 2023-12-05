@@ -145,7 +145,6 @@ footer .social img {
     justify-content: center;
     margin: 50px;
     text-align: start;
-
 }
  .mini-img{
     display: block;
@@ -207,6 +206,7 @@ footer .social img {
     justify-items: center;
     width: 70%;
 }
-.content-align{
-    justify-content: top;
+
+.text-align{
+    margin: 10px;
 }
