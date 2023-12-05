@@ -142,11 +142,9 @@ footer .social img {
     display: grid;
     grid-gap: 25px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
-    align-content: center;
-    align-items: center;
     margin: 50px;
+    text-align: start;
 
 }
  .mini-img{
@@ -154,18 +152,24 @@ footer .social img {
     margin: auto;
     justify-items: center;
     width: 80%;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 .water-img{
     display: block;
     margin: auto;
     justify-items: center;
     width: 45%;
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 .palette-img{
     display: block;
     margin: auto;
     justify-items: center;
     width: 65%;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 .paint-brush-img{
     display: block;
@@ -202,4 +206,7 @@ footer .social img {
     margin: auto;
     justify-items: center;
     width: 70%;
+}
+.content-align{
+    justify-content: top;
 }
