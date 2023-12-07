@@ -117,7 +117,7 @@ footer .social img {
 }
 .layering-img {
     display: block;
-    width: 80%;
+    width: 50%;
     margin: auto;
     align-items: center;
     justify-items: center;
@@ -135,6 +135,9 @@ footer .social img {
     font-family:'Agbalumo', 'cursive';
 }
 .sub-title-text{
+    font-weight: 600;
+}
+.align-center{
     text-align: center;
 }
 
